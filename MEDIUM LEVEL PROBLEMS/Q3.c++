@@ -1,8 +1,15 @@
 #include <iostream>
 using namespace std;
 
-int range_bitwise_and(int left, int right) {
-    
+int range_bitwise_and(int left, int right) 
+{
+    int x=left;
+    while(left!=right+1)
+    {
+        x=x&left;
+        left++;
+    }
+    return x;
 }
 
 int main() {
